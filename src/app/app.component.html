@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div class='container-fluid'>
+  <ul class="nav nav-tabs">
+    <li role="presentation" [ngClass]="{active: route=='/home'}"><a [routerLink]="['/home']">Home</a></li>
+    <li role="presentation" [ngClass]="{active: route=='/github'}"><a [routerLink]="['/github']">Github</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>

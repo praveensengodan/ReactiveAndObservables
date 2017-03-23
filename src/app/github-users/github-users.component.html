@@ -1,0 +1,21 @@
+<div>
+  <label></label>
+  <input type="text" [formControl]="search"/>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>User</th>
+      <th>Url</th>
+    </tr>
+  </thead>
+  <tbody *ngFor='let user of users'>
+    <tr>
+      <td>{{user.id}}</td>
+      <td>{{user.login}}</td>
+      <td>{{user.html_url}}</td>
+    </tr>
+  </tbody>
+</table>
